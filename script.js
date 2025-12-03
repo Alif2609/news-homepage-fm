@@ -20,7 +20,7 @@ function trapFocus(e) {
 
 openMenuBtn.addEventListener("click", () => {
   navContainer.hidden = false;
-  navContainer.setAttribute("aria-hidden", "false");
+ 
   openMenuBtn.setAttribute("aria-expanded", "true");
 
   focusable = navContainer.querySelectorAll("a, button");
@@ -33,8 +33,7 @@ openMenuBtn.addEventListener("click", () => {
 
 closeMenuBtn.addEventListener("click", () => {
   navContainer.hidden = true;
-  navContainer.setAttribute("aria-hidden", "true");
-
+ 
   openMenuBtn.setAttribute("aria-expanded", "false");
   openMenuBtn.focus();
 });
@@ -47,3 +46,4 @@ document.addEventListener("click", (event) => {
     navContainer.style.display = "none";
   }
 });
+
